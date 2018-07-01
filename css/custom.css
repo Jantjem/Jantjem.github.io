@@ -10,7 +10,7 @@ ul.navbar-nav, .jumbotron h1 {
 
 ul.navbar-nav {
 
-font-size: 13px;
+font-size: 15px;
 }
 
 footer {
@@ -46,6 +46,10 @@ color: white;
 	font-size: 36px;
 }
 
+
+.mogelijkheden {
+    padding-top: 45px;
+}
 
 .col-md-4 {
 
@@ -137,6 +141,10 @@ span {
 
 @media (max-width: 767px) { 
 
+    .jumbotron {
+        padding: 8rem;
+    }
+    
 	.jumbotron h1 {
 	font-size: 24px;
 }
