@@ -3,6 +3,15 @@ body {
   padding-top: 3.5rem;
 }
 
+
+.navbar {
+    color: #ce0707;
+}
+
+.nav-item {
+    color: #ce0707;
+}
+
 ul.navbar-nav, .jumbotron h1 {
 	font-family: 'Arvo', courier, serif;
 	font-size: 63px;
@@ -11,7 +20,7 @@ ul.navbar-nav, .jumbotron h1 {
 ul.navbar-nav {
 
 font-size: 15px;
-}
+    }
 
 footer {
  background-color: #f74c3c;
