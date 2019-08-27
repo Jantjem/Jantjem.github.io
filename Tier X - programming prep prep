@@ -1,4 +1,43 @@
 Intro to JS: Drawing and animantion
 
 This is a basic introduction to JavaScript. 
+
+A variable is a way to store values. To use a variable, we must both declare it—to let the program know about the variable—and then assign it—to let the program know what value we are storing in the variable.
+Here's how we would declare a variable named "xPos":
+var xPos;
+Now, we can assign xPos to hold the value 10:
+xPos = 10;
+If we want to—and we often do!—we can declare and assign in one statement:
+var xPos = 10;
 When assigning a variable, the = sign is pronounced as 'get'. So 'var eyeSize = 33;' is 'var eyeSize gets 33'.
+
+If, for some reason, we want to change the value of a variable later, we can re-assign it:
+var xPos = 10;
+// some time later ...
+xPos = 20;
+
+How can we pick names for our variables? For variables in JavaScript, follow these rules:
+Variable names can begin with letters, or the symbols $ or _. They can only contain letters, numbers, $ and _.  They cannot begin with a number. "myVariable", "leaf_1", and "$money3" are all examples of valid variable names.
+Variable names are case sensitive, which means that "xPos" is different from "xpos", so make sure you are consistent.
+Variable names can't be the same as existing variable names, and there are a lot in our ProcessingJS programming environment. If you ever see an error pop up like "Read only!", try changing your variable name.
+Variable names should be clear and meaningful; for example, instead of "ts", use "toothSize".
+Variable names should use camel case for multiple words, like "toothSize" instead of "toothsize" or "tooth_size".
+
+
+
+Using math expressions in JS
+
+In the JavaScript language (and most programming languages), we can use mathematical operators to calculate numbers and create expressions.
+You've already seen examples of adding in JS, using the + operator. You can also use - for subtraction, * for multiplication, / for division, and % to take the remainder. Here are examples of those in action:
+var x = 10;
+var a = x + 5; // add 5, result is 15
+var b = x - 5; // subtract 5, result is 5
+var c = x * 2; // multiply by 2, result is 20
+var d = x / 4; // divide by 4, result is 2.5
+var e = x % 3; // divide by 3 & return remainder, result is 1
+When you use multiple math operators in a single expression, the computer follows an "order of operations" to make sure it computes the result the same way each time. It's the same order of operations that you probably learned in math class, 
+and is commonly remembered as "PEMDAS" - parentheses, exponents, multiplication, division, addition, subtraction. 
+For example, in the following code, it would first evaluate the two expressions in parentheses, then it would multiply those results together, and finally, it would add 100 to that result.
+  var x = 10;
+  var a = (x + 10) * (x / 2) + 100;
+Just like in math expressions, you only need parentheses if you want your expression to be evaluated differently than it would be according to the order of operations. You can leave them out otherwise.
