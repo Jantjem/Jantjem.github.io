@@ -41,3 +41,28 @@ For example, in the following code, it would first evaluate the two expressions 
   var x = 10;
   var a = (x + 10) * (x / 2) + 100;
 Just like in math expressions, you only need parentheses if you want your expression to be evaluated differently than it would be according to the order of operations. You can leave them out otherwise.
+
+
+Review: text and strings
+
+Before this tutorial, we were using number values for most things: passing numbers into functions, storing numbers in variables, etc. As you've now seen, we can also use text values.  We call these text values strings in JavaScript; think of them as a string of letters.
+To create a string, we surround text in quotation marks:
+"Hello World!"
+Then we have to actually do something with that string, like pass it to the text() text()t, e, x, t, left parenthesis, right parenthesis command:
+text("Hello World!", 100, 100);
+We could also store it in a variable, and then pass that variable into the  text() text()t, e, x, t, left parenthesis, right parenthesis command:
+var myGreeting = "Hello World!";
+text(myGreeting, 100, 100);
+Note that we can also use single quotation marks:
+var myGreeting = 'Hello World!';
+But we can't mix and match quotation marks—that's an error! Pick either single or double marks, and stick with them.
+var myGreeting = 'Hello World!"; // oh noes!
+Just like we can manipulate number values, we can also manipulate strings. We can, for example, add one string to another string:
+var myGreeting = "Alo";
+var myName = "Winston";
+var sayHello = myGreeting + ", " + myName + "!"; // Alo, Winston!
+When we combine strings in JS, we call it concatenating strings. We can also combine strings with number values:
+var xPos = 10;
+var yPos = 20;
+var label = "The coordinates are " + xPos + ", " + yPos;
+We also saw in this tutorial that we can use different commands to change the text size and text color when we display strings using the text() text()t, e, x, t, left parenthesis, right parenthesis command. You can read more about those commands in the text section of our documentation (click the "documentation" tab to access).
